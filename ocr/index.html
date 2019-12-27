@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>OCR</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <div id="image-area">
+    <div id="images">
+      <ul>
+
+      </ul>
+    </div>
+    <div id="menu">
+      <input readonly="readonly" id="fileText" type="text">
+      <span id="discern-btn" class="btn">识别</span>
+      <div id="choose-btn" class="btn">
+        <div class="filePicker">选择</div>
+        <input id="fileImage" name="fileImage" type="file" multiple accept="image/jpeg,image/x-png">
+      </div>
+    </div>
+  </div>
+
+  <div id="text-area"></div>
+
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>

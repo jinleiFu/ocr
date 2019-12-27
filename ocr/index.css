@@ -1,0 +1,168 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+img {
+  display: block;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+#image-area {
+  margin: 10px auto;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  width: 670px;
+  height: 200px;
+}
+#images {
+  overflow: auto;
+}
+#images ul {
+  display: flex;
+  height: 122px;
+  padding-bottom: 5px;
+}
+#images li {
+  width: 122px;
+  height: 122px;
+  margin-right: 10px;
+}
+#images li:last-child {
+  margin-right: 0;
+}
+#menu {
+  border: 1px solid silver;
+  width: 650px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+  margin-top: 20px;
+}
+#fileText {
+  border: none;
+  width: 60%;
+  height: 38px;
+  outline: none;
+  padding-left: 10px;
+}
+#menu .btn {
+  width: 110px;
+  height: 38px;
+  cursor: pointer;
+  line-height: 38px;
+  text-align: center;
+  color: #fff;
+  background-color: #00b7ee;
+  box-shadow: 0px 0px 2px #000;
+}
+#choose-btn {
+  position: relative;
+}
+#choose-btn input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+#choose-btn .filePicker {
+  border-radius: 5px;
+}
+#discern-btn {
+  background-color: #f5f5f5;
+}
+#fileImage {
+  top: 0;
+  left: 0;
+}
