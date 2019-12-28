@@ -120,11 +120,15 @@ img {
 #images li:last-child {
   margin-right: 0;
 }
+#images li img {
+  width: 100%;
+  height: 100%;
+}
 #menu {
   border: 1px solid silver;
   width: 650px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 40px;
   margin-top: 20px;
