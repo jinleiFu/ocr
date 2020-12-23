@@ -52,16 +52,17 @@ const server = http.createServer((req, res) => {
     })
   }
 
-  res.writeHead(200, { "Content-Type": 'text/plain', 'charset': 'utf-8', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'PUT,POST,GET,DELETE,OPTIONS' })
+  // res.writeHead(200, { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'PUT,POST,GET,DELETE,OPTIONS' })
+  res.writeHead(200, { "Content-Type": 'application/json;', 'charset': 'utf-8', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'PUT,POST,GET,DELETE,OPTIONS' })
 
   // 在回调函数中统一处理解析后的数据
   function complete() {
 
-    console.log(path);
+    // console.log(path);
 
     if (path === '/discern') {
-      request.post({ url: 'https://aip.baidubce.com/rest/2.0/ocr/v1/accurate_basic?access_token=24.510624cf02f6b7466b7d40775c7757e1.2592000.1580097278.282335-18091036', form: { image: post.image } }, function (err, httpResponse, body) {
-        // console.log(body)
+      request.post({ url: 'https://aip.baidubce.com/rest/2.0/ocr/v1/accurate_basic?access_token=24.28542470a7ecff89770889586fbcc59b.2592000.1611286766.282335-18091036', form: { image: post.image } }, function (err, httpResponse, body) {
+        console.log(body)
         res.write(body)
         res.end();
       })
@@ -69,5 +70,6 @@ const server = http.createServer((req, res) => {
 
   }
 })
+
 
 server.listen(5200)
